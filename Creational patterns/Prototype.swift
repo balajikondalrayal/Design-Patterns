@@ -1,3 +1,9 @@
+//
+//  Singleton.swift
+//  
+//
+//  Created by Balaji Kondalrayan on 14/04/26.
+
 
 // This design pattern will be helpful for larger classes to copy instead of reinstantiate
 
