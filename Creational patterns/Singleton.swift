@@ -32,7 +32,7 @@ struct ViewModel {
 }
 
 
-// Version 2 - GlobalConfiguration has separate class for configuration whihc holds all the data
+// Version 2 - GlobalConfiguration has separate class for configuration which holds all the data
 
 // Use this version if the data is coming from APIs
 class GlobalConfig {

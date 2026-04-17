@@ -27,12 +27,13 @@ Design patterns are reusable solutions to common problems in software design. Th
 
 Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
 
-| Pattern                                                    | Description                                                                                     | Implementation |
-| ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | -------------- |
-| [Builder Pattern](Creational%20patterns/Builder.swift)     | Separates the construction of a complex object from its representation                          | ✅ Swift       |
-| [Factory Pattern](Creational%20patterns/Factory.swift)     | Creates objects without specifying the exact classes to create                                  | ✅ Swift       |
-| [Singleton Pattern](Creational%20patterns/Singleton.swift) | Ensures a class has only one instance and provides a global point of access to it               | ✅ Swift       |
-| [Prototype Pattern](Creational%20patterns/Prototype.swift) | Creates new objects by copying an existing object (prototype) rather than creating from scratch | ✅ Swift       |
+| Pattern                                                                 | Description                                                                                     | Implementation |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | -------------- |
+| [Abstract Factory Pattern](Creational%20patterns/AbstractFactory.swift) | Provides an interface for creating families of related or dependent objects                     | ✅ Swift       |
+| [Builder Pattern](Creational%20patterns/Builder.swift)                  | Separates the construction of a complex object from its representation                          | ✅ Swift       |
+| [Factory Pattern](Creational%20patterns/Factory.swift)                  | Creates objects without specifying the exact classes to create                                  | ✅ Swift       |
+| [Singleton Pattern](Creational%20patterns/Singleton.swift)              | Ensures a class has only one instance and provides a global point of access to it               | ✅ Swift       |
+| [Prototype Pattern](Creational%20patterns/Prototype.swift)              | Creates new objects by copying an existing object (prototype) rather than creating from scratch | ✅ Swift       |
 
 ---
 
@@ -80,6 +81,12 @@ _(To be implemented)_
 ## Pattern Details
 
 ### Creational Patterns
+
+#### Abstract Factory Pattern
+
+The Abstract Factory pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes. This is useful when a system needs to work with multiple families of related products.
+
+**Use Cases:** Cross-platform UI themes, database systems with multiple vendors, UI toolkit families
 
 #### Builder Pattern
 
