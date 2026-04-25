@@ -41,7 +41,9 @@ Creational patterns provide various object creation mechanisms, which increase f
 
 Structural patterns deal with object composition and create relationships between entities to form larger structures.
 
-_(To be implemented)_
+| Pattern                                            | Description                                                                    | Implementation |
+| -------------------------------------------------- | ------------------------------------------------------------------------------ | -------------- |
+| [Proxy Pattern](Structural%20patterns/Proxy.swift) | Provides a surrogate or placeholder for another object to control access to it | ✅ Swift       |
 
 ---
 
@@ -97,6 +99,22 @@ The Builder pattern is used to construct a complex object step by step. It's use
 #### Factory Pattern
 
 Provides an interface for creating objects without specifying their exact classes. This allows for loose coupling between the client and the objects being created.
+
+### Structural Patterns
+
+#### Proxy Pattern
+
+The Proxy pattern provides a surrogate or placeholder for another object to control access to it. It's useful when you need to add control logic, access restrictions, or lazy initialization before accessing the real object.
+
+**Use Cases:** Access control, lazy loading, logging, caching, remote object access
+
+**Implementation Details:**
+
+- `InventoryManager` (Real Subject): The actual object that performs inventory operations
+- `WarehouseGatekeeper` (Proxy): Controls access to the InventoryManager and enforces authorization
+- Authorization checks happen before delegating to the real object
+- Uses Swift actors for thread-safe access control
+- Both methods are properly `async` for concurrent operations
 
 **Use Cases:** Plugin systems, UI element creation, database adapters
 
