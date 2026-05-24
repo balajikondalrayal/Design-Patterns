@@ -51,7 +51,7 @@ class Cargo: Codable {
 }
 
 extension Cargo: Clonable {
-    // for nested classes but it will be slow1
+    // for nested classes but it will be slow
     func clone() throws -> Clonable {
         do {
             let encodedData = try JSONEncoder().encode(self)

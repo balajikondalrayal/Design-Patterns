@@ -7,7 +7,7 @@
 
 /* Proxy pattern is used to control access to an object. It provides a surrogate or placeholder for another object to control access to it. */
 
-/* Creatying the Warehouse gatekeeper to know the real inventory manager and control access to it */
+/* Creating the Warehouse gatekeeper to know the real inventory manager and control access to it */
 
 fileprivate actor InventoryManager {
     private var inventory: [String: Int] = [:]

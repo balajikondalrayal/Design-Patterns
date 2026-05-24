@@ -41,9 +41,11 @@ Creational patterns provide various object creation mechanisms, which increase f
 
 Structural patterns deal with object composition and create relationships between entities to form larger structures.
 
-| Pattern                                            | Description                                                                    | Implementation |
-| -------------------------------------------------- | ------------------------------------------------------------------------------ | -------------- |
-| [Proxy Pattern](Structural%20patterns/Proxy.swift) | Provides a surrogate or placeholder for another object to control access to it | ✅ Swift       |
+| Pattern                                              | Description                                                                    | Implementation |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------ | -------------- |
+| [Adapter Pattern](Structural%20patterns/Adapter.swift) | Converts the interface of a class into another interface clients expect | ✅ Swift       |
+| [Decorator Pattern](Structural%20patterns/Decorator.swift) | Attaches additional responsibilities to an object dynamically | ✅ Swift       |
+| [Proxy Pattern](Structural%20patterns/Proxy.swift)  | Provides a surrogate or placeholder for another object to control access to it | ✅ Swift       |
 
 ---
 
@@ -100,7 +102,33 @@ The Builder pattern is used to construct a complex object step by step. It's use
 
 Provides an interface for creating objects without specifying their exact classes. This allows for loose coupling between the client and the objects being created.
 
+**Use Cases:** Plugin systems, UI element creation, database adapters
+
+#### Singleton Pattern
+
+Ensures that a class has only one instance throughout the application lifecycle and provides a global access point.
+
+**Use Cases:** Logger, configuration manager, database connection pool
+
+#### Prototype Pattern
+
+Creates new objects by cloning an existing object, which can be more efficient than creating from scratch.
+
+**Use Cases:** Copy operations, undo/redo functionality, object caching
+
 ### Structural Patterns
+
+#### Adapter Pattern
+
+The Adapter pattern converts the interface of a class into another interface clients expect. It allows incompatible interfaces to work together and is useful for integrating legacy code or third-party libraries.
+
+**Use Cases:** Legacy code integration, third-party library integration, API compatibility
+
+#### Decorator Pattern
+
+The Decorator pattern attaches additional responsibilities to an object dynamically. It provides a flexible alternative to subclassing and allows behavior to be added to individual objects without affecting others.
+
+**Use Cases:** Feature enhancement, logging, caching, data compression
 
 #### Proxy Pattern
 
@@ -115,20 +143,6 @@ The Proxy pattern provides a surrogate or placeholder for another object to cont
 - Authorization checks happen before delegating to the real object
 - Uses Swift actors for thread-safe access control
 - Both methods are properly `async` for concurrent operations
-
-**Use Cases:** Plugin systems, UI element creation, database adapters
-
-#### Singleton Pattern
-
-Ensures that a class has only one instance throughout the application lifecycle and provides a global access point.
-
-**Use Cases:** Logger, configuration manager, database connection pool
-
-#### Prototype Pattern
-
-Creates new objects by cloning an existing object, which can be more efficient than creating from scratch.
-
-**Use Cases:** Copy operations, undo/redo functionality, object caching
 
 ---
 
